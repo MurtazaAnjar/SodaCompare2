@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soda Comparison App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .dropdowns, .images, .comparison-results {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        select, button {
+            padding: 8px;
+            font-size: 1rem;
+        }
+
+        img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .text-box {
+            width: 30%;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            white-space: pre-wrap;
+        }
+
+        .compare-section {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Soda Nutrition Comparator</h1>
+
+    <div class="dropdowns">
+        <div>
+            <label for="dropdown1">Drink 1:</label><br />
+            <select id="dropdown1"></select><br />
+            <select id="dropdown1b"></select>
+        </div>
+        <div>
+            <label for="dropdown2">Drink 2:</label><br />
+            <select id="dropdown2"></select><br />
+            <select id="dropdown2b"></select>
+        </div>
+    </div>
+
+    <div class="images">
+        <img id="image1" src="" alt="Drink 1 Image" />
+        <img id="image2" src="" alt="Drink 2 Image" />
+    </div>
+
+    <div class="compare-section">
+        <button id="compareButton">Compare</button>
+    </div>
+
+    <div class="comparison-results">
+        <div class="text-box" id="text_area1"></div>
+        <div class="text-box" id="text_area2"></div>
+        <div class="text-box" id="text_area3"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
